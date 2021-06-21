@@ -9,7 +9,7 @@ exports.startServer = () => {
   app.use(
     fileUpload({
       useTempFiles: true,
-      tempFileDir: "C:/Caio/face-detector/public/uploadedImages",
+      tempFileDir: "D:/face-detector/public/uploadedImages",
     })
   );
   app.use(bodyParser.json());
