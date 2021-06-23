@@ -6,12 +6,12 @@ const routes = require("../api/routes/routes");
 const app = express();
 
 exports.startServer = () => {
-  /*app.use(
+  app.use(
     fileUpload({
       useTempFiles: true,
       tempFileDir: "C:/IanderMPC/api-facedetector/public/uploadedImages",
     })
-  );*/
+  );
   app.use(bodyParser.json());
 
   app.listen(process.env.PORT || 5000, () => {
