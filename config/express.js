@@ -9,7 +9,7 @@ exports.startServer = () => {
   app.use(
     fileUpload({
       useTempFiles: true,
-      tempFileDir: "C:/IanderMPC/api-facedetector/public/uploadedImages",
+      tempFileDir: "/IanderMPC/api-facedetector/public/uploadedImages/",
     })
   );
   app.use(bodyParser.json());
